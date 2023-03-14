@@ -10,23 +10,19 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	unsigned int length, i;
 
 	if (str == NULL)
 	{
 		return (NULL);
 	}
-	for (length = 0; str[length]; length++)
 
-	str2 = malloc(sizeof(char) + length);
+	str2 = malloc(strlen(str) + 1);
+
 	if (str2 == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= length; i++)
-		str2[i] = str[i];
-	{
-		return (str2);
-	}
+	strcpy(str2, str);
+	return (str2);
 }
 
