@@ -34,6 +34,16 @@
 
 **TASK THREE**
 
->
+>In this question we copy the contents of one file to another file. The program takes two command line arguments; the first the is the file to be copied, and the second argument is the destination file where the contents of the first file will be copied.
+
+>If the number of arguments is more, an error message is returned to stderr. The program uses open(), read(), write() and close() functions.
+
+>The program has three helper functions; error_98(), error_99(), and error_100(). These functions take the return values of a system call, a buffer and the name of the file being processed as arguments. If the return value is less than 0,an error message is printed to stderr, the buffer is freed, and the program exists with a non-zero status code.
+
+>The program opens the source file for reading and checks for errors. Then, it opens the destination file for writing, truncating if it already exists, and creates it if it doesn't exists. It also checks for errors.
+
+>The program then enters a loop where it reads data from source file and writes it to the destination file. The loop continues until read() returns zero indcating there's no more data to read. It also checks for errors.
+
+>When the loop is finished, the program closes both files usingthe close() function and checks for errors. Then it frees the buffer using free() and exits with a zero status code.
 
 
