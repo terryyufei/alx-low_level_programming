@@ -1,4 +1,4 @@
-# Low-Level Programming - Data Structures, Algorithms, Linux/Unix System Programming
+# C - Data Structures, Algorithms, Linux/Unix System Programming
 
 ## Description
 
