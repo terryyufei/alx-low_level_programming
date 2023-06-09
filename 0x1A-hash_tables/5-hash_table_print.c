@@ -22,9 +22,10 @@ void hash_table_print(const hash_table_t *ht)
 			while (tmp_node)
 			{
 				printf("%s", comma_flag);
+				comma_flag = ", ";
 
 				if (tmp_node->key)
-					printf("'%s' : '%s'", tmp_node->key, tmp_node->value);
+					printf("'%s': '%s'", tmp_node->key, tmp_node->value);
 				tmp_node = tmp_node->next;
 			}
 			index++;
