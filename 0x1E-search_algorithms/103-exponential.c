@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searches for the value to be sorted
+ * _binary_search - searches for the value to be sorted
  * @array: array of integers
  * @left: left of element
  * @right: right of element
